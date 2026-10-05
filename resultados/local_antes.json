@@ -1,0 +1,80 @@
+{
+  "backend": "local",
+  "etiqueta": "antes",
+  "url": "http://localhost:11434",
+  "modelo": "gemma4:e4b",
+  "fecha": "2026-10-05T12:20:37",
+  "parametros": {
+    "max_tokens": 256,
+    "temperature": 0.7,
+    "peticiones_por_usuario": 2,
+    "timeout_s": 180
+  },
+  "escenarios": [
+    {
+      "usuarios": 5,
+      "peticiones": 10,
+      "ok": 10,
+      "errores": 0,
+      "tasa_error_pct": 0.0,
+      "detalle_errores": {},
+      "duracion_s": 115.1,
+      "lat_media_s": 48.49,
+      "lat_p50_s": 57.54,
+      "lat_p95_s": 69.18,
+      "lat_max_s": 69.57,
+      "throughput_req_s": 0.087,
+      "tok_s_agregado": 18.6,
+      "tok_s_por_peticion": 6.4,
+      "aciertos_cache": 0,
+      "cpu_media_pct": 11.9,
+      "cpu_max_pct": 49.3,
+      "ram_sistema_max_gb": 9.63,
+      "ram_ollama_max_gb": 4.63
+    },
+    {
+      "usuarios": 10,
+      "peticiones": 20,
+      "ok": 20,
+      "errores": 0,
+      "tasa_error_pct": 0.0,
+      "detalle_errores": {},
+      "duracion_s": 208.0,
+      "lat_media_s": 82.02,
+      "lat_p50_s": 94.1,
+      "lat_p95_s": 105.95,
+      "lat_max_s": 113.49,
+      "throughput_req_s": 0.096,
+      "tok_s_agregado": 18.6,
+      "tok_s_por_peticion": 3.3,
+      "aciertos_cache": 0,
+      "cpu_media_pct": 9.1,
+      "cpu_max_pct": 70.3,
+      "ram_sistema_max_gb": 9.62,
+      "ram_ollama_max_gb": 4.63
+    },
+    {
+      "usuarios": 20,
+      "peticiones": 40,
+      "ok": 27,
+      "errores": 13,
+      "tasa_error_pct": 32.5,
+      "detalle_errores": {
+        "timeout": 13
+      },
+      "duracion_s": 325.6,
+      "lat_media_s": 107.22,
+      "lat_p50_s": 119.5,
+      "lat_p95_s": 179.55,
+      "lat_max_s": 180.31,
+      "throughput_req_s": 0.083,
+      "tok_s_agregado": 13.5,
+      "tok_s_por_peticion": 3.0,
+      "aciertos_cache": 0,
+      "cpu_media_pct": 5.3,
+      "cpu_max_pct": 20.3,
+      "ram_sistema_max_gb": 9.33,
+      "ram_ollama_max_gb": 4.67
+    }
+  ]
+}
